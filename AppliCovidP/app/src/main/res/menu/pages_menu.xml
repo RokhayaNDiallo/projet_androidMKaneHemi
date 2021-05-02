@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/Apropos"
+        android:icon="@drawable/ic_baseline_description_24"
+        android:title="Apropos"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/Contacts"
+        android:icon="@drawable/ic_baseline_contacts_24"
+        android:title="Contacts"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/data"
+        android:icon="@drawable/ic_baseline_date_range_24"
+        android:title="data"
+        app:showAsAction="ifRoom" />
+</menu>

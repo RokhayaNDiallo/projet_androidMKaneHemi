@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/b5"
+    android:adjustViewBounds="true"
+    tools:context="controleur.QcmActivity">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Questions sur votre état"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="28dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Votre températurature est-elle supérieure à 38°C?"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold|italic"/>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/r11"
+            android:layout_width="77dp"
+            android:layout_height="35dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold|italic"
+            android:textSize="22dp"
+            android:text="OUI"
+            android:onClick="onRadioButtonClicked"
+            android:layout_marginLeft="70dp"/>
+
+        <RadioButton
+            android:id="@+id/r12"
+            android:layout_width="114dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="70dp"
+            android:textColor="#FFFFFF"
+            android:onClick="onRadioButtonClicked"
+            android:textStyle="bold|italic"
+            android:textSize="22dp"
+            android:text="NON" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Etiez-vous en contact avec une personne infectée?"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold|italic"/>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/r21"
+            android:layout_width="77dp"
+            android:layout_height="35dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold|italic"
+            android:textSize="22dp"
+            android:onClick="onRadioButtonClicked2"
+            android:text="OUI"
+            android:layout_marginLeft="70dp"/>
+
+        <RadioButton
+            android:id="@+id/r22"
+            android:layout_width="114dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="30dp"
+            android:onClick="onRadioButtonClicked2"
+            android:text="NON"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp"
+            android:textStyle="bold|italic" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Avez-vous voyagé ces 14 derniers jours?"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold|italic"/>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/r31"
+            android:layout_width="77dp"
+            android:layout_height="35dp"
+            android:textColor="#FFFFFF"
+            android:onClick="onRadioButtonClicked3"
+            android:textStyle="bold|italic"
+            android:textSize="22dp"
+            android:text="OUI"
+            android:layout_marginLeft="70dp"/>
+
+        <RadioButton
+            android:id="@+id/r32"
+            android:layout_width="114dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="70dp"
+            android:textColor="#FFFFFF"
+            android:onClick="onRadioButtonClicked3"
+            android:textStyle="bold|italic"
+            android:textSize="22dp"
+            android:text="NON" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/t5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toussez-vous intensément?"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold|italic"/>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/r41"
+            android:layout_width="77dp"
+            android:layout_height="35dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold|italic"
+            android:textSize="22dp"
+            android:onClick="onRadioButtonClicked4"
+            android:text="OUI"
+            android:layout_marginLeft="70dp"/>
+
+        <RadioButton
+            android:id="@+id/r42"
+            android:layout_width="114dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="70dp"
+            android:textColor="#FFFFFF"
+            android:onClick="onRadioButtonClicked4"
+            android:textStyle="bold|italic"
+            android:textSize="22dp"
+            android:text="NON" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/Q1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            />
+        <EditText
+            android:id="@+id/Q2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            />
+        <EditText
+            android:id="@+id/Q3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            />
+        <EditText
+            android:id="@+id/Q4"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            />
+        <Button
+        android:id="@+id/vali"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:backgroundTint="#C1F2F8"
+        android:text="VALIDER"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold|italic"
+            />
+    </LinearLayout>
+</LinearLayout>

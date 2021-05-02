@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/b5"
+    android:adjustViewBounds="true"
+    tools:context="controleur.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BIENVENUE,"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="6"
+        android:text="l'application vous permez de saisir vos informations personnelles,
+        de répondre à un certains nombres de questions
+         et vous fournit un résultat sur votre état de santé par rapport au covid."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/buttonc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COMMENCER"
+        android:drawableBottom="@color/white"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#C1F2F8"
+        android:textStyle="bold|italic"/>
+</LinearLayout>
